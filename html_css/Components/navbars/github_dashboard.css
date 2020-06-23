@@ -1,0 +1,96 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    background: rgb(42, 44, 49);
+    color: #f4f4f4;
+    display: flex;
+    height: 3.2rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.main-nav svg {
+    fill: #f4f4f4;
+}
+
+.main-nav div {
+    display: flex;
+    margin: 0 1.7rem;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.main-nav .nav-right div {
+    margin: 0 .5rem;
+}
+
+.main-nav div.nav-left svg, .main-nav div.nav-left input, .main-nav div.nav-left ul {
+    margin-right: 1.2rem;
+}
+
+.main-nav div.nav-left ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav div ul li {
+    font-weight: 700;
+    font-size: 0.87rem;
+    padding-right: 1.2rem;
+}
+
+.main-nav div ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.main-nav div ul li a:hover {
+    color: #bbbbbb;
+}
+
+.main-nav div.nav-left input {
+    background: rgb(69, 73, 82);
+    color: #f4f4f4;
+    font-size: 0.87rem;
+    height: 1.7rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.main-nav div.nav-left input:focus {
+    background: rgb(86, 91, 104);
+}
+
+.main-nav div.nav-left input::placeholder {
+    color: #aaaaaa;
+}
+
+/* triangular dropdown caret */
+.dropdown-caret {
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+    margin: 0.4rem;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+/* Change chrome autocomplete styles */
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+
+    background: rgb(69, 73, 82);
+    -webkit-text-fill-color: #f4f4f4;
+    transition: background-color 5000s ease-in-out 0s;
+} 
